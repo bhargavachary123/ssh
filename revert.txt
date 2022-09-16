@@ -1,0 +1,159 @@
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert
+$ git init
+Initialized empty Git repository in C:/Users/jyothika/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert/.git/
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git config --global --list
+user.name=bhargavachary123
+user.email=bhargavacharybasangari@gmail.com
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ cat >revert
+this is java file
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git add revert
+warning: in the working copy of 'revert', LF will be replaced by CRLF the next time Git touches it
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git commit -m "a"
+[master (root-commit) d29c45f] a
+ 1 file changed, 1 insertion(+)
+ create mode 100644 revert
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git remote add origin https://github.com/bhargavachary123/revert.git
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git remote -v
+origin  https://github.com/bhargavachary123/revert.git (fetch)
+origin  https://github.com/bhargavachary123/revert.git (push)
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 226 bytes | 75.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/bhargavachary123/revert.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ cat >f1
+this is f1 file
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git add f1
+warning: in the working copy of 'f1', LF will be replaced by CRLF the next time Git touches it
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git commit -m "f1"
+[master 689ad42] f1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f1
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 288 bytes | 144.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/bhargavachary123/revert.git
+   d29c45f..689ad42  master -> master
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ vi revert
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   revert
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git add revert
+warning: in the working copy of 'revert', LF will be replaced by CRLF the next time Git touches it
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git commit -m "b"
+[master 64512f5] b
+ 1 file changed, 1 insertion(+)
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 290 bytes | 96.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/bhargavachary123/revert.git
+   689ad42..64512f5  master -> master
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ vi revert
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git add revert
+warning: in the working copy of 'revert', LF will be replaced by CRLF the next time Git touches it
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git log --oneline
+64512f5 (HEAD -> master, origin/master) b
+689ad42 f1
+d29c45f a
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git commit -m "c"
+[master c8cc724] c
+ 1 file changed, 1 deletion(-)
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 280 bytes | 140.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/bhargavachary123/revert.git
+   64512f5..c8cc724  master -> master
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git log --oneline
+c8cc724 (HEAD -> master, origin/master) c
+64512f5 b
+689ad42 f1
+d29c45f a
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git revert ^C
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git revert c8cc724
+[master 3a0448a] Revert "c"
+ 1 file changed, 1 insertion(+)
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 318 bytes | 106.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/bhargavachary123/revert.git
+   c8cc724..3a0448a  master -> master
+
+jyothika@LAPTOP-RBVMIGMK MINGW64 ~/OneDrive - MALLA REDDY GROUP OF INSTITUTIONS/Desktop/bhanu/revert (master)
+$
